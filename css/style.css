@@ -21,8 +21,8 @@
 /* Load custom font styles */
 @font-face {
   font-family: 'Figtree';
-  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf'),
-    url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf'),
+    url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
 }
 
 /* Utility classes - The utility classes will be used many times. 
@@ -40,7 +40,6 @@ It purpose is to slim down the amount of boilerplate we need to write. */
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 1em 1em 1em 2em;
 }
 
 .card {
@@ -59,6 +58,8 @@ It purpose is to slim down the amount of boilerplate we need to write. */
   outline: solid 1px var(--clr-card-foreground);
   box-shadow: var(--shadow-pos) var(--shadow-pos) var(--clr-card-foreground);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  margin: 2em;
 }
 
 .card:hover {
