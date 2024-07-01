@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Blog preview card - Coded by Ree</title>
+  </head>
+  <body>
+    <main class="main">
+      <article class="card font-body">
+        <div class="card-image">
+          <img src="./assets/images/illustration-article.svg" alt="" />
+        </div>
+
+        <div class="card-content">
+          <section class="card-content__description">
+            <h4>HTML and CSS Foundations</h4>
+            <p>
+              These languages are the backbone of every website, defining
+              structures, content, and presentations
+            </p>
+          </section>
+
+          <section class="card-content__publish">
+            <p class="card-label">Learning</p>
+            <p>Published 21 Dec 2023</p>
+          </section>
+        </div>
+
+        <div class="card-author-credential">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="a portrait of Greg Hooper"
+          />
+          <p>Greg Hooper</p>
+        </div>
+      </article>
+    </main>
+
+    <script>
+      const x = document.querySelector('.card').getBoundingClientRect();
+
+      console.log(x.width, x.height);
+    </script>
+  </body>
+</html>
